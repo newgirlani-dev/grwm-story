@@ -1,0 +1,125 @@
+body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidden; max-width: 100vw; background-image: url('assets/bg.svg');}
+
+/* LANDING PAGE WEB */
+.container         		{ margin: 0 auto;}
+.banner            		{ background-color: #FFBFCB; color: white; text-align: center; padding: 10px; font-size: 14px; }
+.body-aft-banner   		{ margin: 20px; flex-direction: column; display: flex; position: relative; min-height: calc(100vh - 80px); }
+.hero-text         		{ color: #FFBFCB; font-size: 10vh; font-weight: bold; text-align: center;}
+.hero              		{ text-align: center; display: flex; flex-direction: column; justify-content: center; flex-grow: 1; gap: 20px;}
+.next-icon-img     		{ width: 5%; text-align: center;}
+.next-icon-img:hover 	{ transform: scale(1.1); cursor:pointer; }
+.next-icon-img:active 	{ transform: scale(1.1); }
+
+
+/* HOME PAGE WEB */
+.abt-body-aft-banner	{ margin: 20px; flex-direction: column; display: flex; position: relative; }
+.footer  				{ height:10vh; background-color:#FFBFCB; color:white; padding: 15px; text-align: center; align-items: center; 
+						  display: flex; justify-content: center; gap: 5vw; margin-top: 5vh;}
+.home-options   		{ height: 60vh; text-align:center; display:flex; justify-content: center; align-items: center; gap:10px}
+.submit-btn  			{ background-color:#DE3163; color:white; border: none; border-radius: 10px; font-weight: bold; padding: 15px; 
+	 					  text-align: center; cursor: pointer; font-size: 24px;}
+.submit-btn-container   { text-align:center; margin-top: 10vh; margin-bottom: 5vh;}
+.submit-btn:hover 		{ transform: scale(1.1); background-color: #FFBFCB; }
+.submit-btn:active 		{ transform: scale(1.1); background-color: #FFBFCB; }
+.submit-btn:focus  		{ background-color: #DE3163; }
+.hmenu-img  			{ width: 3%; position: relative; left: 90vw; cursor: pointer;}
+.hmenu  				{ display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; }
+.nav-menu  				{ display: flex; flex-direction: column; background-color: #fff0f2; width: 100%; max-height: 0; 
+						  overflow: hidden; transition: max-height 0.4s ease-in-out; }
+.nav-menu a 			{ padding: 15px 25px; text-decoration: none; color: #de3163; font-weight: bold; border-bottom: 1px solid #ffbfcb; }
+.nav-menu.active 		{ max-height: 300px; }
+.tint 					{ width: 14vw; margin-top: 10vh; }
+.gloss 				    { width: 10vw; margin-top: 25vh; }
+.spray 					{ width: 8vw; margin-top: 3vh; }
+.tint:hover				{transform: scale(1.1);}
+.gloss:hover			{transform: scale(1.1);}
+.spray:hover			{transform: scale(1.1);}
+
+.popup-text-js 			{ position: absolute; bottom: 580px; left: 50%; transform: translateX(-50%); background-color: #DE3163; 
+						  color: white; padding: 15px; border-radius: 10px; font-size: 24px; white-space: nowrap; opacity: 0;
+  						  visibility: hidden; transition: opacity 0.3s ease; }
+.top-text				{ font-size: 16px; text-align: center; color: #ffbfcb;}
+.top-text-title			{ font-size: 24px; text-align: center; color: #ffbfcb; font-weight: bold}
+.tiktok 				{ width: 8vw; position: relative; cursor: pointer; }
+.insta, .fb 			{ width: 3vw; position:relative; top: 0vh; cursor: pointer;}
+.img1 					{ width: 17vw; position: absolute; top: 10%; left: 1%; }
+.img2 					{ width: 18vw; position: absolute; top: 40%; left: 6%; }
+.img3 					{ width: 18vw; position: absolute; top: 10%; right: 5%; }
+.img4 					{ width: 18vw; position: absolute; top: 35%; right: 5%; }
+.deco-images-container  { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+.abt1, .abt2, .abt3, .abt4 	{ width:18vw;  }
+
+/* ABOUT PAGE  */
+.about-txt				{ color: #FFBFCB; font-weight:bold; font-size:7vh; text-align:left;}
+.about-options   		{ min-height: 62vh; display:flex;}
+.about-top 				{ margin:5% }
+.apt1, .apt2	       	{ background-color: #ffbfcb; color: white; padding: 15px; border-radius: 10px; width: 40vw;}
+.about-contents-top  	{ display: flex; }
+.about-img2 			{ width: 25vw; position: absolute; top: 15%; left: 58%; }
+.about-img1 			{ width: 25vw; position: absolute; top: 28%; left: 70%; }
+.about-bottom			{ min-height: 62vh; text-align: center;}
+.hr 					{ border-top: 5px #ffbfcb dotted; border-bottom: 0px;}
+.abt-bot-h				{ color: #FFBFCB; font-weight:bold; font-size:5vh;}
+.profile 				{ display:flex; align-items: center; justify-content: center; gap: 30px; color: white; }
+.pspan 					{ background-color:#FFBFCB; padding:10px; border-radius: 10px; }
+
+/* GALLERY PAGE */
+.gallery-options 		{ min-height: 62vh; }
+.gal-heading			{ color: #FFBFCB; font-weight:bold; font-size:7vh; margin-left:5%;}
+.gal-txt 			    { color: #FFBFCB; }
+.instruction  			{ margin-top: 0; margin-left: 5%;}
+.gal-img 				{ width:18vw; cursor: pointer;}
+.gal-img:hover   		{ transform: scale(1.1); }
+.gallery  				{ text-align:center; }
+
+/* STORIES PAGE */
+.stories-options 		{ min-height: 62vh; display:flex;  }
+
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 768px) {
+
+	/* LANDING PAGE */
+  .container 			{ width: 99.9%; margin:0 auto;  }
+  .banner 				{ font-size: 10px;}
+  .next-icon-img 		{ width: 15%;}
+  .hero  				{ height: 30vh;}
+  .hero-text  			{ margin: 6vw; text-align: center; font-size: 5vh;}
+
+  /* HOME PAGE */
+  .footer  				{ background-color:#FFBFCB; color:white; height: 8vh; position: static;}
+  .hmenu-img  			{ width: 10%; position: relative; left: 75vw;}
+  .tint 				{ width: 30vw; margin-top: 10vh; }
+  .gloss 				{ width: 25vw; margin-top: 15vh; }
+  .spray 				{ width: 20vw; margin-top: 3vh; }
+  .tiktok 				{ width: 20vw; position: relative; }
+  .insta, .fb 			{ width:9vw; position:relative; top: 0vh;}
+  .deco-images-container{ display: none; }
+
+  /* ABOUT PAGE */
+  .about-contents-top  	{ display: flex; flex-direction: column; gap: 20px; }
+  .apt1, .apt2		 	{ width: 90%; }
+  .about-img-top  		{ display:flex; justify-content:center; margin-top:20px; }
+  .about-img1, .about-img2 {  position: static; width:50%; }
+  .about-bottom			{ width:90%; margin:0 auto; }
+  .pspan 				{font-size: 1.2vh;}
+  .abt-bot-h			{ color: #FFBFCB; font-weight:bold; font-size:3vh;}
+  .mpimages  			{ display:flex; flex-direction:column; }
+  .abt1, .abt2, .abt3, .abt4 	{width: 70%;}
+
+  /* GALLERY PAGE */
+  .gal-img  			{ width:45% }
+}
+
+
+
+.cursor {
+    color: #DE3163;
+    font-weight: normal;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
