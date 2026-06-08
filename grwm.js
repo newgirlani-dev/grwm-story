@@ -1,15 +1,15 @@
 function toHome(){
 	window.location.href="home.html";
 }
-function toAbout(){
-	window.location.href="about.html";
-}
+// function toAbout(){
+// 	window.location.href="about.html";
+// }
 function toStories(){
 	window.location.href="stories.html";
 }
-function toGallery(){
-	window.location.href="gallery.html";
-}
+// function toGallery(){
+// 	window.location.href="gallery.html";
+// }
 
 function toSubmit(button){
 	window.open('https://jobanana-amba.notion.site/my-grwm-story-377de4b2114a80349ad1fa51bbc75d9f?source=copy_link', '_blank');
