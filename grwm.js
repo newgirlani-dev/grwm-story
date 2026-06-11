@@ -1,15 +1,22 @@
 function toHome(){
 	window.location.href="home.html";
 }
-// function toAbout(){
-// 	window.location.href="about.html";
-// }
+
+function toAbout(){
+ 	window.location.href="about.html";
+ }
+
 function toStories(){
 	window.location.href="stories.html";
 }
-// function toGallery(){
-// 	window.location.href="gallery.html";
-// }
+
+function toGallery(){
+ 	window.location.href="gallery.html";
+ }
+
+function toGA(){
+    window.open('https://jobanana-amba.notion.site/newgirlani-s-bday-giveaway-2f2de4b2114a80078740f9c3419be575?source=copy_link', '_blank');
+}
 
 function toSubmit(button){
 	window.open('https://jobanana-amba.notion.site/my-grwm-story-377de4b2114a80349ad1fa51bbc75d9f?source=copy_link', '_blank');
