@@ -73,8 +73,12 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
 .gallery  				{ text-align:center; }
 
 /* STORIES PAGE */
-.stories-options 		{ min-height: 62vh; display:flex;  }
-
+.stories-options 		{ min-height: 62vh;}
+.stories-heading        { color: #FFBFCB; font-weight:bold; font-size:7vh; margin-left: 5% }
+.stories-cards          { text-align:center; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;}
+.stories-img            { width: 20vw; cursor: pointer;}
+.story-card:hover       { transform: scale(1.1); }
+.stories-txt            { color: #FFBFCB; font-size: 3vh; }
 
 /* MOBILE SCREEN */
 @media screen and (max-width: 768px) {
@@ -105,10 +109,18 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
   .pspan 				{font-size: 1.2vh;}
   .abt-bot-h			{ color: #FFBFCB; font-weight:bold; font-size:3vh;}
   .mpimages  			{ display:flex; flex-direction:column; }
-  .abt1, .abt2, .abt3, .abt4 	{width: 70%;}
+  .abt1, .abt2, .abt3, .abt4 	{width: 100%;}
 
   /* GALLERY PAGE */
   .gal-img  			{ width:45% }
+
+  /* STORIES PAGE */
+  .stories-body-aft-banner  { display: flex; flex-direction: column; gap: 20px; }
+  .stories-heading          { font-size: 4vh; }
+  .stories-options          { min-height: 62vh;}
+  .stories-img              { width:100%; }
+  .stories-txt              { color: #FFBFCB; font-size: 1.5vh; }
+
 }
 
 
@@ -122,4 +134,54 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+
+/* Modal  */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(4px); 
+}
+
+/* Modal Box */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 24px;
+    border-radius: 12px;
+    width: 80%; 
+    max-width: 800px; 
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+    color: #ffbfcb;
+    text-align: justify;
+}
+
+.close-btn {
+    color: #ffbfcb;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: hotpink;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
