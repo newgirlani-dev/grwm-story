@@ -12,7 +12,7 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
 
 
 /* HOME PAGE WEB */
-.abt-body-aft-banner	{ margin: 20px; flex-direction: column; display: flex; position: relative; }
+.abt-body-aft-banner	{ margin: 20px; flex-direction: column; display: flex; position: relative; min-height: calc(100vh - 80px);}
 .footer  				{ height:10vh; background-color:#FFBFCB; color:white; padding: 15px; text-align: center; align-items: center; 
 						  display: flex; justify-content: center; gap: 5vw; margin-top: 5vh;}
 .home-options   		{ height: 60vh; text-align:center; display:flex; justify-content: center; align-items: center; gap:10px}
