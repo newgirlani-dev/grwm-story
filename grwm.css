@@ -35,7 +35,7 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
 .gloss:hover			{transform: scale(1.1);}
 .spray:hover			{transform: scale(1.1);}
 
-.popup-text-js 			{ position: absolute; bottom: 580px; left: 50%; transform: translateX(-50%); background-color: #DE3163; 
+.popup-text-js 			{ position: absolute; left: 50%; transform: translateX(-50%); background-color: #DE3163; 
 						  color: white; padding: 15px; border-radius: 10px; font-size: 24px; white-space: nowrap; opacity: 0;
   						  visibility: hidden; transition: opacity 0.3s ease; }
 .top-text				{ font-size: 16px; text-align: center; color: #ffbfcb;}
