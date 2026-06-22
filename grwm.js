@@ -126,6 +126,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+function openModal(element) {
+    const modal = document.getElementById("storyModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalBody = document.getElementById("modalBody");
 
+    const title = element.getAttribute("data-title");
+    const story = element.getAttribute("data-story");
+
+    modalTitle.innerText = title;
+    modalBody.innerText = story;
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("storyModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("storyModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 
