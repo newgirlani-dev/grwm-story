@@ -12,7 +12,7 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
 
 
 /* HOME PAGE WEB */
-.abt-body-aft-banner	{ margin: 20px; flex-direction: column; display: flex; position: relative; min-height: calc(100vh - 80px);}
+.abt-body-aft-banner	{ margin: 20px; flex-direction: column; display: flex; position: relative; }
 .footer  				{ height:10vh; background-color:#FFBFCB; color:white; padding: 15px; text-align: center; align-items: center; 
 						  display: flex; justify-content: center; gap: 5vw; margin-top: 5vh;}
 .home-options   		{ height: 60vh; text-align:center; display:flex; justify-content: center; align-items: center; gap:10px}
@@ -35,7 +35,7 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
 .gloss:hover			{transform: scale(1.1);}
 .spray:hover			{transform: scale(1.1);}
 
-.popup-text-js 			{ position: absolute; left: 50%; transform: translateX(-50%); background-color: #DE3163; 
+.popup-text-js 			{ position: absolute; bottom: 580px; left: 50%; transform: translateX(-50%); background-color: #DE3163; 
 						  color: white; padding: 15px; border-radius: 10px; font-size: 24px; white-space: nowrap; opacity: 0;
   						  visibility: hidden; transition: opacity 0.3s ease; }
 .top-text				{ font-size: 16px; text-align: center; color: #ffbfcb;}
@@ -67,10 +67,14 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
 .gallery-options 		{ min-height: 62vh; }
 .gal-heading			{ color: #FFBFCB; font-weight:bold; font-size:7vh; margin-left:5%;}
 .gal-txt 			    { color: #FFBFCB; }
-.instruction  			{ margin-top: 0; margin-left: 5%;}
+.instruction            { margin-top: 0; margin-left: 5%; }
 .gal-img 				{ width:18vw; cursor: pointer;}
 .gal-img:hover   		{ transform: scale(1.1); }
 .gallery  				{ text-align:center; }
+.q, .q-g                { margin-top: 0; margin-left: 5%; color: white; background-color:#ffbfcb; padding: 20px; border-radius: 10px; max-width: 85%; }
+.q-title                { font-size:3vh; }
+.makeup-tips            { font-size:2.5vh; }
+details                 { margin-bottom:15px; }
 
 /* STORIES PAGE */
 .stories-options 		{ min-height: 62vh;}
@@ -113,6 +117,7 @@ body  					{ margin: 0 auto; font-family: Poppins, sans-serif; overflow-x: hidde
 
   /* GALLERY PAGE */
   .gal-img  			{ width:45% }
+  .q                    { width:90%; margin:0 auto;}                   
 
   /* STORIES PAGE */
   .stories-body-aft-banner  { display: flex; flex-direction: column; gap: 20px; }
